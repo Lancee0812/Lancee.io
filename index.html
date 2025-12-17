@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="奶昔的个人介绍网站，展示Fursona角色和创意作品">
+    <meta name="keywords" content="Fursona,作品集,手作,摄影,3D建模,画作">
+    <meta name="author" content="Lancee">
+    <title>奶昔小窝</title>
+    <!-- 预加载字体 -->
+    <link rel="preconnect" href="https://fonts.fontsource.gg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 图标库 (Font Awesome 国内CDN) -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 链接CSS文件 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header id="navbar">
+        <div class="container">
+            <div id="logo" aria-label="Lancee个人作品集">
+                <a href="#hero">
+                    <img src="Sources/logo.svg" alt="Lancee Logo" width="40" height="40">
+                    <span class="logo-text">LANCEE</span>
+                </a>
+            </div>
+            <nav aria-label="主导航">
+                <ul>
+                    <li><a href="#hero" class="nav-link">欢迎</a></li>
+                    <li><a href="#fursona" class="nav-link">兽设</a></li>
+                    <li><a href="#portfolio" class="nav-link">作品</a></li>
+                    <li><a href="#contact" class="nav-link">联系我</a></li>
+                </ul>
+            </nav>
+            <div id="progress-bar" aria-label="页面滚动进度"></div>
+        </div>
+    </header>
+
+    <!-- 头部英雄区 -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>你好！我是<span class="highlight" id="name-typing">奶昔</span><span class="blinking-cursor"></span></h1>
+            <div class="angry-container">
+                <h2 class="playful-text">
+                    <span class="angry-img-container">
+                        <img src="Sources/angry.webp" alt="生气" class="angry-img">
+                    </span>
+                    不是小饮料！
+                </h2>
+            </div>
+            <h1>欢迎来到我的小窝</h1>
+            <a href="#contact" class="btn btn-primary">
+                跳转到联系方式
+                <i class="fas fa-paw paw-icon"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Fursona 展示区 -->
+    <section id="fursona">
+        <div class="container">
+            <h2 class="section-title">我的 Fursona</h2>
+            <div id="fursona-main">
+                <div class="fursona-image">
+                    <img src="https://picsum.photos/seed/fursona-main/800/800" alt="Lancee的主要Fursona角色" loading="lazy">
+                </div>
+                <div class="fursona-details">
+                    <h3>Lancee</h3>
+                    <div class="characteristics">
+                        <div class="characteristic">
+                            <h4>角特征</h4>
+                            <p>具有独特的角结构，每个角都有精细的纹理和渐变色彩，是角色最显著的特征之一</p>
+                        </div>
+                        <div class="characteristic">
+                            <h4>性格</h4>
+                            <p>充满好奇心、创造力和冒险精神，同时保持着温和与友善的本质</p>
+                        </div>
+                        <div class="characteristic">
+                            <h4>背景故事</h4>
+                            <p>来自一个充满魔法和创造力的世界，通过艺术和设计来表达内心世界和情感</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fursona-gallery" class="gallery-grid">
+                <img src="https://picsum.photos/seed/fursona-1/400/400" alt="Lancee的Fursona角色造型" loading="lazy">
+                <img src="https://picsum.photos/seed/fursona-2/400/400" alt="Lancee的Fursona角色动作" loading="lazy">
+                <img src="https://picsum.photos/seed/fursona-3/400/400" alt="Lancee的Fursona角色特写" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">我的作品</h2>
+            <div id="portfolio-filter" class="filter-container">
+                <button class="filter-btn active" data-category="all">全部 <i class="fas fa-paw paw-icon"></i></button>
+                <button class="filter-btn" data-category="handmade">手作 <i class="fas fa-paw paw-icon"></i></button>
+                <button class="filter-btn" data-category="photography">摄影 <i class="fas fa-paw paw-icon"></i></button>
+                <button class="filter-btn" data-category="3d">3D建模 <i class="fas fa-paw paw-icon"></i></button>
+                <button class="filter-btn" data-category="drawing">画作 <i class="fas fa-paw paw-icon"></i></button>
+            </div>
+            <div id="portfolio-grid" class="portfolio-container">
+                <!-- 作品卡片 1 -->
+                <div class="portfolio-item" data-category="handmade">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/handmade-1/600/400" alt="手工作品示例" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>皮革工艺钱包</h3>
+                        <p>手工缝制的皮革钱包，采用优质材料和精细工艺</p>
+                    </div>
+                </div>
+                
+                <!-- 作品卡片 2 -->
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/photo-1/600/400" alt="摄影作品示例" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>城市黄昏</h3>
+                        <p>记录城市日落时分的光影变化和建筑轮廓</p>
+                    </div>
+                </div>
+                
+                <!-- 作品卡片 3 -->
+                <div class="portfolio-item" data-category="3d">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/3d-1/600/400" alt="3D建模作品示例" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>幻想生物设计</h3>
+                        <p>基于Fursona元素的3D角色模型设计</p>
+                    </div>
+                </div>
+                
+                <!-- 作品卡片 4 -->
+                <div class="portfolio-item" data-category="drawing">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/drawing-1/600/400" alt="画作示例" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>水彩风景画</h3>
+                        <p>用水彩技法创作的自然风景作品</p>
+                    </div>
+                </div>
+                
+                <!-- 作品卡片 5 -->
+                <div class="portfolio-item" data-category="handmade">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/handmade-2/600/400" alt="手工作品示例2" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>手工编织挂毯</h3>
+                        <p>采用传统编织技法创作的装饰挂毯</p>
+                    </div>
+                </div>
+                
+                <!-- 作品卡片 6 -->
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image">
+                        <img src="https://picsum.photos/seed/photo-2/600/400" alt="摄影作品示例2" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>自然微距摄影</h3>
+                        <p>展示植物和昆虫微观世界的细节</p>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-pagination" class="pagination-container">
+                <button class="pagination-btn prev">上一页</button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn next">下一页</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我区域 -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+                <div class="contact-text">
+                    <!-- 图片显示区域 -->
+                    <div class="contact-image-display" id="contactImageDisplay">
+                        <img src="https://picsum.photos/seed/qq/500/500" alt="QQ二维码" id="currentImage">
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=ONUjsTLfpjzZbSuZMuJegj9w4G57pS80&jump_from=webapi&authKey=Q/PdzOdUUW3wxv30UwF46pd8MsuOj+RwnT4pTY7uELisKksq9fO1ZBsdXA96X828" aria-label="访问QQ" class="social-link active" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/qq/500/500" data-alt="QQ二维码">
+                            <i class="fab fa-qq"></i>
+                            <span>QQ</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                        <a href="https://x.com/naixi58300005?s=21" aria-label="访问X" class="social-link" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/x/500/500" data-alt="X二维码">
+                            <i class="fab fa-twitter"></i>
+                            <span>X</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                        <a href="https://space.bilibili.com/247244211?spm_id_from=333.1007.0.0" aria-label="访问Bilibili" class="social-link" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/bilibili/500/500" data-alt="Bilibili二维码">
+                            <i class="fab fa-bilibili"></i>
+                            <span>Bilibili</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                        <a href="https://steamcommunity.com/profiles/76561199170680618/" aria-label="访问Steam" class="social-link" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/steam/500/500" data-alt="Steam二维码">
+                            <i class="fab fa-steam"></i>
+                            <span>Steam</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                        <a href="https://t.me/Lancee0812" aria-label="访问Telegram" class="social-link" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/telegram/500/500" data-alt="Telegram二维码">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                        <a href="#" aria-label="访问GitHub" class="social-link" target="_blank" rel="noopener noreferrer" data-image="https://picsum.photos/seed/github/500/500" data-alt="GitHub二维码">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <i class="fas fa-paw paw-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" aria-label="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lancee. No rights reserved. <del>Not real! </del></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>
